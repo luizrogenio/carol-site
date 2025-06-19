@@ -1,1 +1,187 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Carol Calegari Beauty</title></head><body><h1>Site atualizado com galerias organizadas</h1><p>Faça o upload deste arquivo como <strong>index.html</strong> no repositório do GitHub Pages.</p></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carol Calegari Beauty</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #d4af37;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #f4e9d8;
+      padding: 1rem 0;
+    }
+    nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #6b4e16;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x400?text=Carol+Calegari+Beauty') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      text-shadow: 1px 1px 6px #000;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+    .faq-item h4 {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #d4af37;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .btn {
+      background-color: #d4af37;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Carol Calegari Beauty</h1>
+    <p>Realce sua beleza com naturalidade e sofisticação</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#studio">O Studio</a>
+    <a href="#faq">Dúvidas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="hero">
+    Realce sua beleza com elegância
+  </div>
+
+  <section id="sobre">
+    <h2>Sobre a Carol</h2>
+    <p>Carol Calegari é especialista em realçar a beleza feminina com leveza e elegância. Maquiadora profissional há mais de 5 anos, dedica-se a oferecer uma experiência acolhedora e personalizada para cada cliente.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li><strong>Maquiagem Social:</strong> R$ 190,00 – Alta durabilidade, ideal para festas e eventos</li>
+      <li><strong>Maquiagem para Noiva:</strong> Valor sob consulta – Atendimento exclusivo, com prévia e entrevista</li>
+      <li><strong>Design de Sobrancelhas:</strong> R$ 45,00 – Modelagem com precisão e naturalidade</li>
+      <li><strong>Lash Lifting:</strong> R$ 90,00 – Curvatura e definição para seus cílios</li>
+    </ul>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria de Fotos</h2>
+
+    <h3>Maquiagem Social</h3>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Social+1" alt="Social 1" />
+      <img src="https://via.placeholder.com/300x400?text=Social+2" alt="Social 2" />
+    </div>
+
+    <h3>Maquiagem Leve</h3>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Leve+1" alt="Leve 1" />
+      <img src="https://via.placeholder.com/300x400?text=Leve+2" alt="Leve 2" />
+    </div>
+
+    <h3>Design de Sobrancelhas</h3>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Design+Antes" alt="Design Antes" />
+      <img src="https://via.placeholder.com/300x400?text=Design+Depois" alt="Design Depois" />
+    </div>
+
+    <h3>Lash Lifting</h3>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Lash+Antes" alt="Lash Antes" />
+      <img src="https://via.placeholder.com/300x400?text=Lash+Depois" alt="Lash Depois" />
+    </div>
+
+    <h3>Noivas e Debutantes</h3>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x400?text=Noiva+1" alt="Noiva 1" />
+      <img src="https://via.placeholder.com/300x400?text=Noiva+2" alt="Noiva 2" />
+    </div>
+  </section>
+
+  <section id="studio">
+    <h2>Sobre o Studio</h2>
+    <p>Localizado em Santa Maria - RS, o studio da Carol é um ambiente aconchegante e elegante, idealizado para oferecer conforto e privacidade em cada atendimento. Cada detalhe foi pensado para proporcionar uma experiência única e inesquecível.</p>
+  </section>
+
+  <section id="faq">
+    <h2>Dúvidas Frequentes</h2>
+    <div class="faq-item">
+      <h4>Preciso agendar com antecedência?</h4>
+      <p>Sim, os horários são limitados. Recomendamos agendar com pelo menos uma semana de antecedência.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Atende a domicílio?</h4>
+      <p>Somente para noivas, com agendamento prévio e consulta personalizada.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Quais formas de pagamento são aceitas?</h4>
+      <p>Pix, transferência, dinheiro e cartão (crédito ou débito).</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>📞 WhatsApp: <a href="https://wa.me/555592068449" target="_blank" class="btn">Fale com a Carol</a></p>
+    <p>📍 Santa Maria - RS</p>
+    <p>📷 Instagram: <a href="http://bit.ly/4l6czqs" target="_blank">@carolcalegari.beauty</a></p>
+  </section>
+
+  <footer>
+    © 2025 Carol Calegari Beauty – Todos os direitos reservados
+  </footer>
+</body>
+</html>
