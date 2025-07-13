@@ -125,6 +125,55 @@
 }
 
 </style>
+
+<style>
+/* Gradiente no cabeçalho */
+header {
+  background: linear-gradient(135deg, #fce4ec, #e8b8c4) !important;
+}
+
+/* Gradiente nos botões */
+.btn {
+  background: linear-gradient(to right, #e8b8c4, #f9d4df) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Efeito de sombra nas imagens */
+.gallery img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Animações de entrada suave */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
+</style>
+
+<script>
+// Ativar animações de scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const reveals = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("active");
+    });
+  }, { threshold: 0.1 });
+
+  reveals.forEach(r => observer.observe(r));
+});
+</script>
+
 </head>
 <body>
   <header>
@@ -145,7 +194,7 @@
     Realce sua beleza com elegância
   </div>
 
-  <section id="sobre">
+  <section id="sobre" class="reveal">
     <h2>Sobre a Carol</h2>
     <p><strong>Carol Calegari é maquiadora profissional há mais de 8 anos</strong>, especialista em realçar a beleza com sofisticação, respeitando os traços e a essência de cada cliente. Com formação sólida e diversos cursos com profissionais renomados do mercado da beleza, mantém-se sempre atualizada com as técnicas mais modernas e eficazes.</p>
     <p>Seu trabalho une <strong>conhecimento técnico, colorimetria e visagismo</strong>, resultando em uma assinatura própria: <strong>maquiagens leves, elegantes e atemporais</strong> — perfeitas para quem valoriza harmonia, sofisticação e naturalidade.</p>
@@ -166,7 +215,7 @@
 
   </section>
 
-<section id="servicos">
+<section id="servicos" class="reveal">
   <h2>Serviços</h2>
 
   <h3>Maquiagem</h3>
@@ -204,7 +253,7 @@
 </section>
 
 
-  <section id="avaliacoes" style="background-color:#fef7ec; padding:2rem;">
+  <section id="avaliacoes" style="background-color:#fef7ec; padding:2rem;" class="reveal">
     <h2>O que dizem sobre a Carol</h2>
     <blockquote>⭐ ⭐ ⭐ ⭐ ⭐<br>"Ela realizou a maquiagem da minha formatura e superou todas as expectativas."</blockquote>
     <blockquote>⭐ ⭐ ⭐ ⭐ ⭐<br>"Excelente profissional, produtos de qualidade e atendimento top."</blockquote>
@@ -214,7 +263,7 @@
     </p>
   </section>
 
-  <section id="contato">
+  <section id="contato" class="reveal">
 
 <h2>Contato</h2>
 <p>📍 Rua Vale Machado, 1.070 – Santa Maria - RS</p>
@@ -238,7 +287,7 @@
     loading="lazy">
   </iframe>
 
-<section id="video">
+<section id="video" class="reveal">
   <h2>Veja o trabalho da Carol em ação</h2>
   <div style="margin-top: 2rem;">
     <iframe width="100%" height="315" 
